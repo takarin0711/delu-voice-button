@@ -242,9 +242,22 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-const grid = document.getElementById("button-grid");
+const LAUGH_SOUNDS = [
+  { label: "笑い1",  file: "voice/laugh/laugh1.mp3" },
+  { label: "笑い2",  file: "voice/laugh/laugh2.mp3" },
+  { label: "笑い3",  file: "voice/laugh/laugh3.mp3" },
+  { label: "笑い4",  file: "voice/laugh/laugh4.mp3" },
+  { label: "笑い5",  file: "voice/laugh/laugh5.mp3" },
+  { label: "笑い6",  file: "voice/laugh/laugh6.mp3" },
+  { label: "笑い7",  file: "voice/laugh/laugh7.mp3" },
+  { label: "笑い8",  file: "voice/laugh/laugh8.mp3" },
+  { label: "笑い9",  file: "voice/laugh/laugh9.mp3" },
+  { label: "笑い10", file: "voice/laugh/laugh10.mp3" },
+  { label: "笑い11", file: "voice/laugh/laugh11.mp3" },
+  { label: "笑い12", file: "voice/laugh/laugh12.mp3" },
+];
 
-SOUNDS.forEach(({ label, file }) => {
+function createVoiceButton(label, file) {
   const btn = document.createElement("button");
   btn.className = "voice-btn";
   btn.textContent = label;
@@ -252,5 +265,15 @@ SOUNDS.forEach(({ label, file }) => {
     if (e.animationName === "card-enter") btn.classList.add("card-entered");
   }, { once: true });
   btn.addEventListener("click", () => playSound(file, btn));
-  grid.appendChild(btn);
+  return btn;
+}
+
+const grid = document.getElementById("button-grid");
+SOUNDS.forEach(({ label, file }) => {
+  grid.appendChild(createVoiceButton(label, file));
+});
+
+const laughGrid = document.getElementById("laugh-grid");
+LAUGH_SOUNDS.forEach(({ label, file }) => {
+  laughGrid.appendChild(createVoiceButton(label, file));
 });
