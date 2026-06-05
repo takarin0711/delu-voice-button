@@ -3,16 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DELUTAYA's VOICE ZOO BUTTON</title>
+  <title>DELUTAYA's VOICE BUTTON</title>
   <link rel="stylesheet" href="page.css">
 </head>
 <body>
   <canvas id="starfield"></canvas>
   <header>
-    <h1><img src="icon/delutaya_dot.png" alt="DELUTAYA" class="header-icon"> DELUTAYA's VOICE ZOO BUTTON <img src="icon/delumin_dot.png" alt="DELUMIN" class="header-icon" style="width:1.1em;height:1.1em;"></h1>
-    <p>本編は<a href="https://www.youtube.com/watch?v=E0QUFBQphsM" target="_blank" rel="noopener">こちら<img src="icon/youtube.png" alt="YouTube" class="yt-icon"></a></p>
+    <h1><img src="icon/delutaya_dot.png" alt="DELUTAYA" class="header-icon"> DELUTAYA's VOICE BUTTON <img src="icon/delumin_dot.png" alt="DELUMIN" class="header-icon" style="width:1.1em;height:1.1em;"></h1>
   </header>
-  <main id="button-grid"></main>
+  <section id="zoo-section">
+    <div class="section-divider">
+      <span class="section-label">動物ボイス</span>
+    </div>
+    <p class="section-link">本編は<a href="https://www.youtube.com/watch?v=E0QUFBQphsM" target="_blank" rel="noopener">こちら<img src="icon/youtube.png" alt="YouTube" class="yt-icon"></a></p>
+    <div id="button-grid"></div>
+  </section>
+  <section id="laugh-section">
+    <div class="section-divider">
+      <span class="section-label">笑いボイス</span>
+    </div>
+    <div id="laugh-grid"></div>
+  </section>
   <script src="sounds.js"></script>
   <script src="page.js"></script>
 </body>
