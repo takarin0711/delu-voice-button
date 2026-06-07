@@ -243,18 +243,21 @@ document.addEventListener("keydown", (e) => {
 });
 
 const LAUGH_SOUNDS = [
-  { label: "笑い1",  file: "voice/laugh/laugh1.mp3" },
-  { label: "笑い2",  file: "voice/laugh/laugh2.mp3" },
-  { label: "笑い3",  file: "voice/laugh/laugh3.mp3" },
-  { label: "笑い4",  file: "voice/laugh/laugh4.mp3" },
-  { label: "笑い5",  file: "voice/laugh/laugh5.mp3" },
-  { label: "笑い6",  file: "voice/laugh/laugh6.mp3" },
-  { label: "笑い7",  file: "voice/laugh/laugh7.mp3" },
-  { label: "笑い8",  file: "voice/laugh/laugh8.mp3" },
-  { label: "笑い9",  file: "voice/laugh/laugh9.mp3" },
-  { label: "笑い10", file: "voice/laugh/laugh10.mp3" },
-  { label: "笑い11", file: "voice/laugh/laugh11.mp3" },
-  { label: "笑い12", file: "voice/laugh/laugh12.mp3" },
+  { label: "笑い1",  file: "voice/laugh/01.mp3" },
+  { label: "笑い2",  file: "voice/laugh/02.mp3" },
+  { label: "笑い3",  file: "voice/laugh/03.mp3" },
+  { label: "笑い4",  file: "voice/laugh/04.mp3" },
+  { label: "笑い5",  file: "voice/laugh/05.mp3" },
+  { label: "笑い6",  file: "voice/laugh/06.mp3" },
+  { label: "笑い7",  file: "voice/laugh/07.mp3" },
+  { label: "笑い8",  file: "voice/laugh/08.mp3" },
+  { label: "笑い9",  file: "voice/laugh/09.mp3" },
+  { label: "笑い10", file: "voice/laugh/10.mp3" },
+  { label: "笑い11", file: "voice/laugh/11.mp3" },
+  { label: "笑い12", file: "voice/laugh/12.mp3" },
+  { label: "笑い13", file: "voice/laugh/13.mp3" },
+  { label: "笑い14", file: "voice/laugh/14.mp3" },
+  { label: "笑い15", file: "voice/laugh/15.mp3" },
 ];
 
 function createVoiceButton(label, file) {
