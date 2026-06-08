@@ -280,3 +280,22 @@ const laughGrid = document.getElementById("laugh-grid");
 LAUGH_SOUNDS.forEach(({ label, file }) => {
   laughGrid.appendChild(createVoiceButton(label, file));
 });
+
+const SCREAM_SOUNDS = [
+  { label: "叫び1",  file: "voice/scream/01.mp3" },
+  { label: "叫び2",  file: "voice/scream/02.mp3" },
+  { label: "叫び3",  file: "voice/scream/03.mp3" },
+  { label: "叫び4",  file: "voice/scream/04.mp3" },
+  { label: "叫び5",  file: "voice/scream/05.mp3" },
+  { label: "叫び6",  file: "voice/scream/06.mp3" },
+  { label: "叫び7",  file: "voice/scream/07.mp3" },
+  { label: "叫び8",  file: "voice/scream/08.mp3" },
+  { label: "叫び9",  file: "voice/scream/09.mp3" },
+  { label: "叫び10", file: "voice/scream/10.mp3" },
+  { label: "叫び11", file: "voice/scream/11.mp3" },
+];
+
+const screamGrid = document.getElementById("scream-grid");
+SCREAM_SOUNDS.forEach(({ label, file }) => {
+  screamGrid.appendChild(createVoiceButton(label, file));
+});

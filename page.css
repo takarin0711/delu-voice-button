@@ -366,7 +366,8 @@ header h1 {
 
 /* ── Laugh Section ───────────────────────────── */
 
-#laugh-section {
+#laugh-section,
+#scream-section {
   max-width: 960px;
   margin: 48px auto 0;
   position: relative;
@@ -397,7 +398,8 @@ header h1 {
   white-space: nowrap;
 }
 
-#laugh-grid {
+#laugh-grid,
+#scream-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
   gap: 12px;
@@ -426,13 +428,15 @@ header h1 {
   }
 
   #button-grid,
-  #laugh-grid {
+  #laugh-grid,
+  #scream-grid {
     grid-template-columns: repeat(auto-fill, minmax(146px, 1fr));
     gap: 10px;
   }
 
   #zoo-section,
-  #laugh-section {
+  #laugh-section,
+  #scream-section {
     margin-top: 40px;
   }
 
