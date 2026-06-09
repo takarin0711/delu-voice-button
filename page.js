@@ -258,6 +258,7 @@ const LAUGH_SOUNDS = [
   { label: "笑い13", file: "voice/laugh/13.mp3" },
   { label: "笑い14", file: "voice/laugh/14.mp3" },
   { label: "笑い15", file: "voice/laugh/15.mp3" },
+  { label: "笑い16", file: "voice/laugh/16.mp3" },
 ];
 
 function createVoiceButton(label, file) {
@@ -293,6 +294,7 @@ const SCREAM_SOUNDS = [
   { label: "叫び9",  file: "voice/scream/09.mp3" },
   { label: "叫び10", file: "voice/scream/10.mp3" },
   { label: "叫び11", file: "voice/scream/11.mp3" },
+  { label: "叫び12", file: "voice/scream/12.mp3" },
 ];
 
 const screamGrid = document.getElementById("scream-grid");
